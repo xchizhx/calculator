@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
             style: OutlinedButton.styleFrom(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(18))),
-            child: Text("*")),
+            child: Text(text)),
       ),
     );
   }
@@ -65,25 +65,28 @@ class _MyHomePageState extends State<MyHomePage> {
                   const Expanded(
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                    children: [Text("2"), Text("+"), Text("2")],
+                    children: [
+                      Text("2", style: TextStyle(fontSize: 50)),
+                      Text("+", style: TextStyle(fontSize: 50)),
+                      Text("2", style: TextStyle(fontSize: 50),)],
                   )),
                   Expanded(
                       child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      getButton("*"),
-                      getButton("*"),
-                      getButton("*"),
-                      getButton("*")
+                      getButton("del"),
+                      getButton("0"),
+                      getButton("%"),
+                      getButton("/")
                     ],
                   )),
                   Expanded(
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          getButton("*"),
-                          getButton("*"),
-                          getButton("*"),
+                          getButton("7"),
+                          getButton("8"),
+                          getButton("9"),
                           getButton("*")
                         ],
                       )),
@@ -91,20 +94,20 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          getButton("*"),
-                          getButton("*"),
-                          getButton("*"),
-                          getButton("*")
+                          getButton("4"),
+                          getButton("5"),
+                          getButton("6"),
+                          getButton("-")
                         ],
                       )),
                   Expanded(
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          getButton("*"),
-                          getButton("*"),
-                          getButton("*"),
-                          getButton("*")
+                          getButton("1"),
+                          getButton("2"),
+                          getButton("3"),
+                          getButton("+")
                         ],
                       ))
                 ],
